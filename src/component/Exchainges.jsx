@@ -30,7 +30,7 @@ if(error) return <ErrorComponent message={"Error While fatching Exchainges "} />
 
         {loading ? <Loader /> : <>
 
-          <HStack wrap={'wrap'}>
+          <HStack wrap={'wrap'} justifyContent={'space-evenly'}>
             {
               exchanges.map((i) => (
                 <ExchangCard key={i.id} name={i.name} rank={i.trust_score_rank} img={i.image} url={i.url} />
